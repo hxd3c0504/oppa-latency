@@ -4,15 +4,17 @@
 
 ## 下载
 
-前往 [Releases](https://github.com/hxd3c0504/oppa-latency/releases/latest) 下载 `Oppa-3.261028.936-latency-arm64.dmg`。
+前往 [Releases](https://github.com/hxd3c0504/oppa-latency/releases/latest) 下载 `Oppa-3.261028.936-latency.2-arm64.dmg`。
 
 仅适用于 **Apple 芯片 Mac（arm64），macOS 13 或以上**。不适用于 Intel Mac 或 Windows。
+
+当前版本：**latency.2（边测速边排序）**。
 
 ## 功能
 
 - 节点行右侧的绿色图标左边显示最近一次测得的延迟，单位 ms。
 - 窗口可见时每 30 秒自动测速；隐藏时暂停。
-- 点击底部“刷新”会更新订阅并重新测速，完成后按延迟从低到高排序，超时和没有结果的节点放最后。
+- 点击底部“刷新”会更新订阅并重新测速，边测速边按延迟从低到高排序，不必等待全部节点超时；未响应节点仍保留在最后。
 - 自动测速只更新数值，保持上一次手动刷新确定的顺序。
 - 全部节点模式显示各节点自身的测速结果，分组模式沿用组内汇总逻辑。
 - 顶部闪电按钮手动测速，不改变列表顺序。
@@ -36,7 +38,7 @@
 Release 同时提供 SHA-256 校验文件。DMG 的 SHA-256：
 
 ```text
-01c2ceded847d67502a5cd709b793ac47d35b027a1f0b5f91db4bf7032529950
+44e3589e58b400d195ff3bd12c853b11bd317ec49d40985f2238084cc68ced51
 ```
 
 这是已打包应用的分发仓库，不包含原客户端的完整源码。
