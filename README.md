@@ -4,13 +4,18 @@
 
 ## 下载
 
-前往 [Releases](https://github.com/hxd3c0504/oppa-latency/releases/latest) 下载 `Oppa-3.261028.936-latency.2-arm64.dmg`。
+前往 [Releases](https://github.com/hxd3c0504/oppa-latency/releases/latest) 下载 `Oppa-3.261028.936-latency.3-arm64.dmg`。
 
 仅适用于 **Apple 芯片 Mac（arm64），macOS 13 或以上**。不适用于 Intel Mac 或 Windows。
 
-当前版本：**latency.2（边测速边排序）**。
+当前版本：**latency.3（实时流量图与应用排行）**。
 
 ## 功能
+
+- 新增最近 15 秒的滚动图。蓝线表示下载，红线表示上传，绿线表示当前节点的延迟。
+- 窗口聚焦时每秒采样并平滑滚动。窗口可见但未聚焦时每 3 秒采样，移出屏幕或最小化后暂停图表采样。
+- 图表下方按近 5 秒的 VPN 流量从高到低显示一行应用图标，聚焦时每 5 秒刷新。排除 Oppa 自身，取不到图标时显示应用首字。
+- 手动刷新优先测试上次延迟低的节点。
 
 - 节点行右侧的绿色图标左边显示最近一次测得的延迟，单位 ms。
 - 窗口可见时每 30 秒自动测速；隐藏时暂停。
@@ -38,7 +43,7 @@
 Release 同时提供 SHA-256 校验文件。DMG 的 SHA-256：
 
 ```text
-44e3589e58b400d195ff3bd12c853b11bd317ec49d40985f2238084cc68ced51
+90fbe73cc9ea9857fd53edbf89057affdd3df432ab23d0bac8585b3bc02a17ba
 ```
 
 这是已打包应用的分发仓库，不包含原客户端的完整源码。
